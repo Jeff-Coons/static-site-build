@@ -9,14 +9,14 @@
       "setup": "rm -rf public && mkdir -p public",
 
       "build:html": "nunjucks index.njk --path app --out public",
-      "watch:html": "onchange 'app/partials/*.njk' -- npm run build:html",
+      "watch:html": "onchange 'app/*.njk' 'app/partials/*.njk' -- npm run build:html",
 
       "prebuild:img": "cd public && mkdir -p images",
       "build:img": "imagemin-newer app/images/ public/images",
       "watch:img": "onchange 'app/images/**/*' -- npm run build:img",
 
       "prebuild:css": "cd public && mkdir -p styles",
-      "build:css": "postcss -u precss -u autoprefixer -s postcss-scss -o public/styles/style.css app/styles/style.css",
+      "build:css": "postcss -u precss -u autoprefixer -s postcss-scss -u cssnano -o public/styles/style.css app/styles/style.css",
       "watch:css": "onchange 'app/styles/**.css' -- npm run build:css",
 
       "prebuild:js": "cd public && mkdir -p scripts",
@@ -24,7 +24,7 @@
       "watch:js": "onchange 'app/scripts/**.js' -- npm run build:js",
 
       "build": "run-s build:html build:img build:css build:js",
-      "serve": "live-server public/ --port='3000'",
+      "serve": "live-server public/ --host='dev.vuse-landing.com' --port='8080'",
       "watch": "run-s clean build && run-p serve watch:*"
   },
   "author": "Jeff Coons <jeffcoons@live.com>",
@@ -35,6 +35,7 @@
     "babel-preset-es2015": "^6.9.0",
     "babelify": "^7.3.0",
     "browserify": "^13.0.1",
+    "cssnano": "^3.7.1",
     "imagemin-newer": "^1.0.1",
     "live-server": "^1.0.0",
     "npm-run-all": "^2.2.2",

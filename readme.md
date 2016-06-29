@@ -35,6 +35,7 @@ If a directory is missing in the public folder, run the build command before ```
     - <a href="https://github.com/jonathantneal/precss">PreCSS</a> (use sass like markup)
     - <a href="https://github.com/postcss/postcss-scss">PostCSS-SCSS</a> (compile sass like markup to css)
     - <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>
+    - <a href="https://github.com/ben-eb/cssnano">CSSNano</a> (minify the css)
 
 ### JS
 - <a href="https://babeljs.io/">Babel</a>
