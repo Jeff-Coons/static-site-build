@@ -18,7 +18,7 @@ Scripts included with this command: build:img, build:css, and build:js.
 ```
     npm run build
 ```
-If a directory is missing in the public folder, run this command before ``` npm run watch ```
+If a directory is missing in the public folder, run the build command before ``` npm run watch ```
 <br />
 
 #### Check out the package.json "scripts" for other commands available
