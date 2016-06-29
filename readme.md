@@ -9,14 +9,14 @@ Here is the 2 most important commands to use while developing:
 Spools up a local server and begins watching your files for changes<br />
 Scripts included with this command: clean, build, and serve.
 ```
-    npm run watch
+npm run watch
 ```
 
 #### Build<br />
 Compile your assets into the public folder.
 Scripts included with this command: build:img, build:css, and build:js.
 ```
-    npm run build
+npm run build
 ```
 If a directory is missing in the public folder, run the build command before ``` npm run watch ```
 <br />
@@ -54,5 +54,5 @@ If a directory is missing in the public folder, run the build command before ```
 #### Notes
 You can add a custom development url/host by adding a host flag to the "serve" script<br />
 ```
-    "serve": "live-server public/ --host mycoolsite.com --port='3000'"
+"serve": "live-server public/ --host mycoolsite.com --port='3000'"
 ```
