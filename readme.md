@@ -18,7 +18,7 @@ Scripts included with this command: build:img, build:css, and build:js.
 ```
 npm run build
 ```
-If a directory is missing in the public folder, run the build command before ``` npm run watch ```
+If a directory is missing in the public folder, run the build command (`npm run build`) before ``` npm run watch ```
 <br />
 
 #### Check out the package.json "scripts" for other commands available
@@ -31,9 +31,8 @@ If a directory is missing in the public folder, run the build command before ```
 - <a href="https://github.com/paulcpederson/imagemin-newer">Imagemin-newer</a>
 
 ### CSS
+- <a href="https://github.com/sass/node-sass">Node Sass</a>
 - <a href="https://github.com/postcss/postcss">PostCSS</a>
-    - <a href="https://github.com/jonathantneal/precss">PreCSS</a> (use sass like markup)
-    - <a href="https://github.com/postcss/postcss-scss">PostCSS-SCSS</a> (compile sass like markup to css)
     - <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a>
     - <a href="https://github.com/ben-eb/cssnano">CSSNano</a> (minify the css)
 

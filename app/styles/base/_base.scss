@@ -1,0 +1,46 @@
+/**
+ * Base
+ */
+
+
+body {
+    background: $white;
+    color: $color-secondary;
+    font: $font-secondary;
+    padding: 0 1em;
+    min-height: 100vh;
+    font-size: 16px;
+}
+
+
+main {
+    @include site-center();
+
+    @media #{$very-wide-up} {
+        max-width: calc(100vw - 45vw);
+    }
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+a {
+    color: $color-secondary;
+    text-decoration: none;
+
+    &[role="button"] {
+        cursor: pointer;
+    }
+}
+
+
+hr {
+    margin: 2em 0;
+}

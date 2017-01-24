@@ -1,0 +1,47 @@
+/**
+ * Variables
+ * Site wide variables
+ *
+ * Breakpoints
+ * Colors
+ * Fonts
+ * Misc
+ */
+
+
+/** Breakpoints */
+$mobile: 320px;
+$tablet: 740px;
+$desktop: 1024px;
+$site-width: 1300px;
+$wide: 1500px;
+$very-wide: 1800px;
+
+
+/** Colors */
+$white: #fff;
+$black: #000;
+$red: #aa1111;
+$gray-xlt: #f5f5f5;
+$gray-lt: #cccccc;
+$gray-md: #a3a3a3;
+$gray-dk: #666666;
+
+$color-primary: $red;
+$color-secondary: $gray-dk;
+$color-tertiary: $gray-md;
+
+
+/** Fonts */
+$optima: 400 1em/1.25 'Optima', 'serif';
+$optima-bold: 700 1em/1.25 'Optima', 'serif';
+$arial: 400 0.75em/1.25 'Arial', 'sans-serif';
+$arial-bold: 700 1em/1.25 'Arial', 'sans-serif';
+
+$font-primary: $optima-bold;
+$font-secondary: $arial;
+
+
+/** Misc */
+$site-graident-bg: linear-gradient(to top, $gray-xlt 0%, $gray-lt 100%);
+$border-color: $gray-dk;
